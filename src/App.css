@@ -7,8 +7,17 @@
   pointer-events: none;
 }
 
+.Bitcoin-logo {
+  padding-top: 20px;
+  height: 30vmin;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .Bitcoin-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -34,5 +43,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes Bitcoin-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
